@@ -13,7 +13,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config('DEBUG')
+DEBUG = False
 
 
 ALLOWED_HOSTS = ['*']
@@ -125,7 +125,7 @@ USE_L10N = True
 USE_TZ = True
 
 
-BACKEND_URL = ''
+BACKEND_URL = 'https://ecommerce-server-developeruche.herokuapp.com'
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 STATIC_ROOT = "staticfiles"
